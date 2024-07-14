@@ -8,7 +8,12 @@
         <div class="card">
             <div class="card-header">
                 <div class="d-flex justify-content-between mt-2 font-bold">
-                    <button wire:navigate href="create-category" class="btn btn-primary">Add New Category</button>
+                    <button wire:navigate href="create-category" class="btn btn-primary py-2">Add New Category</button>
+                    <form wire:submit="search" class="col-3 float-right rounded-md space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <input type="text" class="form-control rounded-md" wire:model="query" placeholder="Search">
+
+                        <button type="submit"></button>
+                    </form>
                 </div>
                 <livewire:flashmessage />
 
@@ -41,6 +46,7 @@
                         @endforeach
                         </tbody>
                     </table>
+                    {{ $categories->links() }}
                 </div>
 
             </div>
