@@ -17,5 +17,8 @@ Route::middleware([
 
     Route::get('users', \App\Livewire\Users\Users::class);
     Route::get('categories',  \App\Livewire\Categories\Categories::class);
+    Route::get('create-category', \App\Livewire\Categories\CreateCategory::class);
+    Route::get('update-category/{category}', \App\Livewire\Categories\UpdateCategory::class);
+    Route::get('view-category/{category}', \App\Livewire\Categories\ViewCategory::class);
     Route::get('products', \App\Livewire\Products\Products::class);
 });
