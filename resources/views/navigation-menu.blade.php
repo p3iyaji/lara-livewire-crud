@@ -17,17 +17,17 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ url('users') }}" :active="request()->routeIs('users')">
+                    <x-nav-link href="{{ url('/users') }}" :active="request()->routeIs('users')">
                         {{ __('Users') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link wire:navigate href="categories" :active="request()->routeIs('categories')">
+                    <x-nav-link wire:navigate href="/categories" :active="request()->routeIs('categories')">
                         {{ __('Categories') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link wire:navigate href="products" :active="request()->routeIs('products')">
+                    <x-nav-link wire:navigate href="/products" :active="request()->routeIs('products')">
                         {{ __('Products') }}
                     </x-nav-link>
                 </div>

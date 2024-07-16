@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Categories;
 
-use App\Livewire\Forms\CategoryForm;
 use App\Models\Category;
 use Livewire\Component;
 use Livewire\WithoutUrlPagination;

@@ -66,6 +66,6 @@ class UsersTableSeeder extends Seeder
 //        ];
 
         //User::insert($users);
-        User::factory(7)->create();
+        User::factory(20)->create();
     }
 }

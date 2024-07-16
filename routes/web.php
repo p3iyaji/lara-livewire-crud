@@ -21,4 +21,7 @@ Route::middleware([
     Route::get('update-category/{category}', \App\Livewire\Categories\UpdateCategory::class);
     Route::get('view-category/{category}', \App\Livewire\Categories\ViewCategory::class);
     Route::get('products', \App\Livewire\Products\Products::class);
+    Route::get('create-product', \App\Livewire\Products\CreateProduct::class);
+    Route::get('update-product/{product}', \App\Livewire\Products\UpdateProduct::class);
+    Route::get('view-product/{product}', \App\Livewire\Products\ViewProduct::class);
 });

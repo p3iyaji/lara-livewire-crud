@@ -18,6 +18,6 @@ class ProductsTableSeeder extends Seeder
 //        ];
 //        Product::insert($products);
 
-        Product::factory(7)->create();
+        Product::factory(20)->create();
     }
 }

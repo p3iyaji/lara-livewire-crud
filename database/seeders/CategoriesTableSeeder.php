@@ -46,6 +46,6 @@ class CategoriesTableSeeder extends Seeder
 //        ];
 //
 //        Category::insert($categories);
-        Category::factory(7)->create();
+        Category::factory(20)->create();
     }
 }
